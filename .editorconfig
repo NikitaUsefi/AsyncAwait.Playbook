@@ -1,0 +1,8 @@
+root = true
+
+[*.cs]
+dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
+dotnet_diagnostic.CA2007.severity = suggestion   # Consider ConfigureAwait(false) in libraries
+dotnet_diagnostic.CA2016.severity = warning      # Forward CancellationToken
+dotnet_diagnostic.CA2012.severity = warning      # Use ValueTask correctly
+dotnet_analyzer_diagnostic.category-Usage.severity = warning
